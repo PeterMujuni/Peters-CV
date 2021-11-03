@@ -1,12 +1,9 @@
 /*** LEFT SECTION ***/
 section.left {
-    width: 483px;
 }
 
-section.left figure {
+section.left figure.profile-photo {
     position: relative;
-    width: 100%;
-    margin-bottom: 20px;
 }
 
 section.left figure img {
@@ -14,10 +11,17 @@ section.left figure img {
     border-radius: 9px;
 }
 
-section.left figure h1 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 10px;
+.profile-text h1 {
+    bottom: 10px;
     color: #ff2710;
+}
+
+.profile-text p {
+    color: white;
+}
+
+.profile-text {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
 }

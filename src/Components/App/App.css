@@ -1,3 +1,52 @@
+/* RESET */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, figure {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+  font-family: 'Montserrat', sans-serif;
+}
+/* /END RESET */
+
+h2 {
+  color: #727171;
+  font-size: 22px;
+}
+
+h3 {
+  color: #727171;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+h4 {
+  color: #255f7f;
+  font-size: 16px;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -10,8 +59,80 @@ header {
 }
 
 .container {
-  width: 100%;
+  width: 1080px;
+  margin: 90px auto 0;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1em;
+}
+
+article.box {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+article.box > div{
+  margin-bottom: 15px;
+}
+
+article.box > .header,
+article.box > .work-dato{
   display: flex;
-  justify-content: center;
-  margin-top: 75px;
+  align-items: center;
+}
+
+article.box > .header > h2,
+article.box > .work-dato > h4{
+  margin-left: 15px;
+  font-weight: 500;
+}
+
+article.box > .text {
+  color: #333333;
+}
+
+/*article.box hr {
+  overflow: visible; /* For IE */
+  /*padding: 0;
+  border: none;
+  border-top: medium double #255f7f;
+  color: #255f7f;
+  text-align: center;
+}
+
+article.box hr:after {
+  content: "&";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white;
+}*/
+
+article.box hr {
+  line-height: 5px;    
+  position: relative;
+  outline: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  border: none;
+}
+
+article.box hr:before {
+  content: '';
+  background: linear-gradient(to right, transparent, #255f7f, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 3px;
+}
+
+@media (max-width: 1080px) {
+  .container {
+    grid-auto-flow: row;
+  }
 }

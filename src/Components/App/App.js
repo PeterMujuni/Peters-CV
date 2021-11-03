@@ -6,6 +6,7 @@ import github from '../Navbar/github.png';
 import logo from '../Navbar/portfolioLogo.png';
 import profilePhoto from '../ProfilePhoto/profilePhoto.jpg';
 import { ProfilePhoto } from '../ProfilePhoto/ProfilePhoto';
+import { Experience } from '../Experience/Experience';
 
 class App extends React.Component {
   
@@ -22,7 +23,10 @@ class App extends React.Component {
         <section className="container">
           <section className="left">
             <ProfilePhoto profilePhoto={profilePhoto}/>
-          </section>          
+          </section>
+          <section className="right">
+            <Experience />
+          </section>         
         </section>
       </div>
     );
