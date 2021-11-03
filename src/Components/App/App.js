@@ -7,6 +7,14 @@ import logo from '../Navbar/portfolioLogo.png';
 import profilePhoto from '../ProfilePhoto/profilePhoto.jpg';
 import { ProfilePhoto } from '../ProfilePhoto/ProfilePhoto';
 import { Experience } from '../Experience/Experience';
+import { PersonalInfo } from '../PersonalInfo/PersonalInfo';
+import workDeskIcon from '../Experience/experince.png';
+import calenderIcon from '../Experience/calender.png';
+import location from '../PersonalInfo/location.png';
+import work from '../PersonalInfo/work.png';
+import personInfo from '../PersonalInfo/person-info.png';
+import email from '../PersonalInfo/email.png';
+
 
 class App extends React.Component {
   
@@ -23,9 +31,10 @@ class App extends React.Component {
         <section className="container">
           <section className="left">
             <ProfilePhoto profilePhoto={profilePhoto}/>
+            <PersonalInfo location={location} work={work} personInfo={personInfo} email={email}/>
           </section>
           <section className="right">
-            <Experience />
+            <Experience workDeskIcon={workDeskIcon} calenderIcon={calenderIcon}/>
           </section>         
         </section>
       </div>

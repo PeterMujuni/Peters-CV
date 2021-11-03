@@ -32,12 +32,12 @@ body {
 /* /END RESET */
 
 h2 {
-  color: #727171;
+  color: #255f7f;
   font-size: 22px;
 }
 
 h3 {
-  color: #727171;
+  color: #caab96;
   font-size: 18px;
   font-weight: 500;
 }
@@ -77,19 +77,25 @@ article.box > div{
 }
 
 article.box > .header,
-article.box > .work-dato{
+article.box > .work-dato,
+article.box > .job-titel,
+article.box > .email-info,
+article.box > .location-info{
   display: flex;
   align-items: center;
 }
 
 article.box > .header > h2,
-article.box > .work-dato > h4{
+article.box > .work-dato > h4,
+article.box > .job-titel > h3,
+article.box > .email-info > h3,
+article.box > .location-info > h3{
   margin-left: 15px;
   font-weight: 500;
 }
 
 article.box > .text {
-  color: #333333;
+  color: #caab96;
 }
 
 /*article.box hr {
