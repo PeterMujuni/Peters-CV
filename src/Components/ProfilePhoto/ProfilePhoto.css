@@ -4,6 +4,7 @@ section.left {
 
 section.left figure.profile-photo {
     position: relative;
+    margin-bottom: 10px;
 }
 
 section.left figure img {
