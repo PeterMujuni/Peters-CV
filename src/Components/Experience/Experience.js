@@ -9,7 +9,7 @@ export class Experience extends React.Component {
                     <img src={this.props.workDeskIcon} alt="a worker at a desk" />
                     <h2>ERFARING</h2>
                 </div>
-                <div className="under-titel">
+                <div className="job-titel">
                     <h3>Frontend Developer at Softmedia.dk</h3>
                 </div>
                 <div className="work-dato">

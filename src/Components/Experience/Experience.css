@@ -1,0 +1,45 @@
+article.box > .header,
+article.box > .work-dato,
+article.box > .job-titel,
+article.box > .email-info,
+article.box > .location-info{
+  display: flex;
+  align-items: center;
+}
+
+article.box > .header > h2,
+article.box > .work-dato > h4,
+article.box > .job-titel > h3,
+article.box > .email-info > h3,
+article.box > .location-info > h3{
+  margin-left: 15px;
+  font-weight: 500;
+}
+
+article.box > .text {
+  color: #484644;
+}
+
+article.box > .text {
+    color: #484644;
+}
+
+article.box hr {
+line-height: 5px;    
+position: relative;
+outline: 0;
+color: black;
+text-align: center;
+height: 1.5em;
+border: none;
+}
+
+  article.box hr:before {
+    content: '';
+    background: linear-gradient(to right, transparent, #255f7f, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 3px;
+  }
