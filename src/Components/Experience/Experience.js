@@ -17,7 +17,7 @@ export class Experience extends React.Component {
                         <img src={this.props.calenderIcon} alt="a calender" />
                         <h4 className="dato">Maj 2015 - Dec 2015</h4>
                     </div>
-                    <div className="text" id="last-text">
+                    <div className="paraText">
                         <p>Mine opgaver bestod af udvikling af hjemmesider, ved brug af HTML og CSS. Siderne blev dernæst overført til Wordpress.</p>
                     </div>
                     <hr></hr>

@@ -30,21 +30,26 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 /* /END RESET */
+h1 {
+  font-weight: 700;
+}
 
 h2 {
   color: #255f7f;
   font-size: 22px;
+  font-weight: 600;
 }
 
 h3 {
   color: #484644;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h4 {
   color: #255f7f;
   font-size: 16px;
+  margin-left: 15px;
 }
 
 header {
@@ -73,8 +78,21 @@ article.box {
   margin-bottom: 15px;
 }
 
-article.box > div{
+article.box  div{
   margin-bottom: 15px;
+}
+
+article.box > .header,
+article.box .work-dato,
+article.box > .job-titel,
+article.box > .email-info,
+article.box > .location-info{
+  display: flex;
+  align-items: center;
+}
+
+.paraText {
+  color: #484644;
 }
 
 /*article.box hr {

@@ -1,4 +1,5 @@
 import React from "react";
+import './Language.css';
 
 export class Language extends React.Component {
     render() {
@@ -8,10 +9,18 @@ export class Language extends React.Component {
                     <img src={this.props.languageIcon} alt="speak box"/>
                     <h2>SPROG</h2>
                 </div>
-                <div className="skills">
-                    <div className="skill">
+                <div className="languages">
+                    <div className="language">
                         <h4>Dansk</h4>
                         <progress max="100" value="100"></progress>
+                    </div>
+                    <div className="language">
+                        <h4>Engelsk</h4>
+                        <progress max="100" value="90"></progress>
+                    </div>
+                    <div className="language">
+                        <h4>Arabisk</h4>
+                        <progress max="100" value="80"></progress>
                     </div>
                 </div>
             </article>

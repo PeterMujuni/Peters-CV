@@ -23,6 +23,7 @@ import { Language } from '../Language/Language';
 import skill from '../Skill/færdigheder.png';
 import projectIcon from '../Project/project.png';
 import languageIcon from '../Language/sprog.png';
+import { Footer } from '../Footer/Footer';
 
 
 
@@ -50,8 +51,9 @@ class App extends React.Component {
             <Experience workDeskIcon={workDeskIcon} calenderIcon={calenderIcon}/>
             <Education calenderIcon={calenderIcon} education={education}/>
             <Project projectIcon={projectIcon} calenderIcon={calenderIcon}/>
-          </section>         
+          </section>                   
         </section>
+        <Footer />
       </div>
     );
   }
