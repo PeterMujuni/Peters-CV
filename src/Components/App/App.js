@@ -1,65 +1,43 @@
 import React from 'react';
 import './App.css';
-import Navbar from '../Navbar/Navbar';
-import linkedin from '../Navbar/linkedin.png';
-import github from '../Navbar/github.png';
-import logo from '../Navbar/portfolioLogo.png';
-import profilePhoto from '../ProfilePhoto/profilePhoto.jpg';
+import { Navbar } from '../Navbar/Navbar';
 import { ProfilePhoto } from '../ProfilePhoto/ProfilePhoto';
 import { Experience } from '../Experience/Experience';
 import { PersonalInfo } from '../PersonalInfo/PersonalInfo';
-import workDeskIcon from '../Experience/experince.png';
-import calenderIcon from '../Experience/calender.png';
-import location from '../PersonalInfo/location.png';
-import work from '../PersonalInfo/work.png';
-import personInfo from '../PersonalInfo/person-info.png';
-import email from '../PersonalInfo/email.png';
-import education from '../Education/education.png';
 import { Education } from '../Education/Education';
 import { Project } from '../Project/Project';
 import { Resume } from '../Resume/Resume';
-import { Skill } from '../Skill/Skill';
+import { Skills } from '../Skill/Skills';
 import { Language } from '../Language/Language';
-import skill from '../Skill/færdigheder.png';
-import projectIcon from '../Project/project.png';
-import languageIcon from '../Language/sprog.png';
-import { Footer } from '../Footer/Footer';
+import { CVContextProvider } from '../../contexts/cvcontext';
 
 
 
 class App extends React.Component {
-  
-  componentDidMount() {
-    document.body.style.backgroundColor = "#082940";
-  }
-
   render(){
     return (
       <div className="App">
+        <CVContextProvider>
         <header>
-          <Navbar linkedin={linkedin} github={github} portfolioLogo={logo}/>
+          <Navbar />
         </header>
         <section className="container">
           <section className="left">
-            <ProfilePhoto profilePhoto={profilePhoto}/>
-            <PersonalInfo location={location} work={work} personInfo={personInfo} email={email}/>
+            <ProfilePhoto />
+            <PersonalInfo />
             <Resume />
-            <Skill skill={skill}/>
-            <Language languageIcon={languageIcon}/>
+            <Skills />
+            <Language/>
           </section>
           <section className="right">
-            <Experience workDeskIcon={workDeskIcon} calenderIcon={calenderIcon}/>
-            <Education calenderIcon={calenderIcon} education={education}/>
-            <Project projectIcon={projectIcon} calenderIcon={calenderIcon}/>
-          </section>                   
+            <Experience />
+            <Education />
+            <Project />
+          </section>                
         </section>
-        <Footer />
+        </CVContextProvider>
       </div>
     );
-  }
-
-  componentWillUnmount() {
-    document.body.style.backgroundColor = null;
   }
 }
 

@@ -16,11 +16,11 @@ export class Footer extends React.Component {
                         </div>
                         <div class="github">
                             <span><SiGithub/></span>
-                            <a href="https://github.com/PeterMujuni" target="_blank" class="val">PeterMujuni</a>
+                            <a href="https://github.com/PeterMujuni"  class="val">PeterMujuni</a>
                         </div>
                         <div class="linkedin">
                             <span><SiLinkedin/></span>
-                            <a href="https://www.linkedin.com/in/petermujuni/" target="_blank" class="val">peterMujuni</a>
+                            <a href="https://www.linkedin.com/in/petermujuni/"  class="val">peterMujuni</a>
                         </div>
                     </div>        
                 </div>               

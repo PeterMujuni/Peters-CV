@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import './ProfilePhoto.css';
+import { CVContext } from "../../contexts/cvcontext";
 
-export class ProfilePhoto extends React.Component {
-    render() {
-        return (
-            <figure className="profile-photo">
-                <img src={this.props.profilePhoto} />
-                <div className="profile-text">
-                    <h1>PETER MUJUNI MWEBESA</h1>
-                    <p>Frontend Developer</p>
-                </div>
-            </figure>
-        );
-    }
+export const ProfilePhoto = () => {
+    //use context to get data
+    const {cv} = useContext(CVContext);
+    console.log(cv.personligInfo.image);
+    return (
+        <figure className="profile-photo">
+            <img src={cv.personligInfo.image} />
+            <div className="profile-text">
+                <h1>{cv.personligInfo.name}</h1>
+                <p>{cv.personligInfo.position}</p>
+            </div>
+        </figure>
+    );
 }

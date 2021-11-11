@@ -1,13 +1,81 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 1em;
+  margin-bottom: .5em;
+  color: #255f7f;
+}
+
+p {
+  margin-bottom: .75em;
+  color: #484644;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif;
+  background: #082940;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  max-width: 1320px;
+  margin: 90px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 35px;
+}
+
+.container .left {
+  width: 100%;
+  flex: 1 1 30%;
+}
+
+.container .right {
+  width: 100%;
+  flex: 1 1 45%;
+}
+
+header {
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+article {
+  width: 100%;
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 9px;
+  padding: 15px;
+}
+
+.work-dato, 
+.job-titel,
+.email-info,
+.location-info
+ {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  margin: 25px 0 10px 0;
+}
+
+.work-dato h4, 
+.job-titel h4,
+.email-info h4,
+.location-info h4 {
+  margin: 0;
 }

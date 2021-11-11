@@ -1,30 +1,42 @@
-import React from "react";
+import React, { useContext } from "react";
 import { GrFormNextLink } from 'react-icons/gr';
+import { HorizontalRule } from "../horizRule/HoriRule";
 import './Project.css';
+import { GoCalendar } from 'react-icons/go';
+import {FiActivity} from 'react-icons/fi';
+import { peterMujuni } from "../../util/cvData";
+import { CVContext } from "../../contexts/cvcontext";
 
-export class Project extends React.Component {
-    render() {
-        return (
-            <article className="projects box">
-                <div className="header">
-                    <img src={this.props.projectIcon} alt="lightball" />
-                    <h2>PROJEKTER</h2>
-                </div>
-                <div className="project">
-                    <div className="under-titel">
-                        <h3>Team-page hos Meneto.dk</h3>
-                    </div>
-                    <div className="work-dato">
-                        <img src={this.props.calenderIcon} alt="a calender"/>
-                        <h4 className="dato">April 2019</h4>
-                    </div>
-                    <div className="paraText">
-                        <p>Udfra et tilsendt design i storkærms størrelse psd fil, skulle jeg udtrække data fra filen og omskrive designet til HTML og CSS. Grid systemet skulle baseres på Bootstraps grid, og resten skulle laves fra bunden af.</p>
-                    </div>
-                    <a href=""><GrFormNextLink/>Se project</a>
-                    <hr></hr>                   
-                </div>
-            </article>
-        );
-    }
+export const Project = () => {
+    const { cv } = useContext(CVContext);
+    const style = {color: '#255f7f', width: '25', height: '25'};
+    const style1 = {color: '#255f7f', width: '35', height: '35'};
+    return (
+        <article className="projects box">
+            <div className="header">
+                <FiActivity  style={style1}/>
+                <h2>PROJEKTER</h2>
+            </div>
+            {cv.projects.map((item, index) => {
+                    return (
+                        <div key={index} className="project">                    
+                            <div className="under-titel">
+                                <h3>{item.name}</h3>
+                            </div>
+                            <div className="work-dato">
+                                <GoCalendar style={style}/>
+                                <h4 className="dato">{item.period}</h4>
+                            </div>
+                            <div className="paraText">
+                                <p>{item.description}</p>
+                            </div>
+                            <a href={item.link}><GrFormNextLink/>Se project</a>
+                            <HorizontalRule/>                 
+                        </div>
+                    );
+                })}
+            
+        </article>
+    );
+    
 }

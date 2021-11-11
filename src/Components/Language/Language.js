@@ -1,29 +1,28 @@
-import React from "react";
+import React, { useContext } from "react";
 import './Language.css';
+import {GiTalk} from 'react-icons/gi';
+import { CVContext } from "../../contexts/cvcontext";
 
-export class Language extends React.Component {
-    render() {
-        return (
-            <article className="box">
-                <div className="header">
-                    <img src={this.props.languageIcon} alt="speak box"/>
-                    <h2>SPROG</h2>
-                </div>
-                <div className="languages">
-                    <div className="language">
-                        <h4>Dansk</h4>
-                        <progress max="100" value="100"></progress>
-                    </div>
-                    <div className="language">
-                        <h4>Engelsk</h4>
-                        <progress max="100" value="90"></progress>
-                    </div>
-                    <div className="language">
-                        <h4>Arabisk</h4>
-                        <progress max="100" value="80"></progress>
-                    </div>
-                </div>
-            </article>
-        )
-    }
+export const Language = () => {
+    const { cv } = useContext(CVContext);
+    const style1 = {color: '#255f7f', width: '35', height: '35'};
+    return (
+        <article className="box">
+            <div className="header">
+                <GiTalk style={style1}/>
+                <h2>SPROG</h2>
+            </div>
+            <div className="languages">
+                {cv.language.map((item, index) => {
+                    return (
+                        <div key={index} className="language">
+                            <h4>{item.name}</h4>
+                            <progress max="100" value={item.progressValue}></progress>
+                        </div>
+                    );
+                })}                    
+            </div>
+        </article>
+    );
+    
 }

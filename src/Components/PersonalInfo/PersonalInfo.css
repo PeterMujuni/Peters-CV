@@ -1,8 +1,16 @@
-article.box > .header > h2,
-article.box > .work-dato > h4,
-article.box > .job-titel > h3,
-article.box > .email-info > h3,
-article.box > .location-info > h3{
-  margin-left: 15px;
-  font-weight: 500;
+.job-titel h3,
+.email-info h3,
+.location-info h3 {
+    margin: 0;
+}
+
+.job-titel,
+.email-info,
+.location-info {
+    margin: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #255f7f;
 }

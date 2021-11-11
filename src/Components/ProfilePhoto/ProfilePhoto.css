@@ -1,28 +1,29 @@
-/*** LEFT SECTION ***/
-section.left {
-}
+section.left figure {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
 section.left figure.profile-photo {
     position: relative;
-    margin-bottom: 10px;
 }
 
 section.left figure img {
     width: 100%;
+    display: block;
     border-radius: 9px;
 }
 
 .profile-text h1 {
-    bottom: 10px;
     color: #ff2710;
-}
-
-.profile-text p {
-    color: white;
+    margin-bottom: 0;
 }
 
 .profile-text {
     position: absolute;
     left: 20px;
     bottom: 20px;
+}
+
+.profile-text p {
+    color: #fff;
 }
