@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import { Navbar } from '../Navbar/Navbar';
 import { ProfilePhoto } from '../ProfilePhoto/ProfilePhoto';
@@ -10,35 +9,36 @@ import { Resume } from '../Resume/Resume';
 import { Skills } from '../Skill/Skills';
 import { Language } from '../Language/Language';
 import { CVContextProvider } from '../../contexts/cvcontext';
+import { ParticleBackground } from '../ParticleBackground/ParticleBackground';
 
 
 
-class App extends React.Component {
-  render(){
-    return (
-      <div className="App">
-        <CVContextProvider>
-        <header>
-          <Navbar />
-        </header>
-        <section className="container">
-          <section className="left">
-            <ProfilePhoto />
-            <PersonalInfo />
-            <Resume />
-            <Skills />
-            <Language/>
-          </section>
-          <section className="right">
-            <Experience />
-            <Education />
-            <Project />
-          </section>                
+export const App = () => {
+  
+  return (
+    <div className="App">
+      <ParticleBackground />
+      <CVContextProvider>
+      <header>
+        <Navbar />
+      </header>
+      <main className="container">
+        <section className="left">
+          <ProfilePhoto />
+          <PersonalInfo />
+          <Resume />
+          <Skills />
+          <Language/>
         </section>
-        </CVContextProvider>
-      </div>
-    );
-  }
+        <section className="right">
+          <Experience />
+          <Education />
+          <Project />
+        </section>                
+      </main>
+      </CVContextProvider>
+    </div>
+  );
+  
 }
 
-export default App;

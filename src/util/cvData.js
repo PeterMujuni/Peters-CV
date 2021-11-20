@@ -1,7 +1,7 @@
-import profileimage from '../Components/ProfilePhoto/profilePhoto.jpg';
-import logoImage from '../Components/Navbar/portfolioLogo.png';
-import linkedinImage from '../Components/Navbar/linkedin.png';
-import githubImage from '../Components/Navbar/github.png';
+import profileimage from '../components/ProfilePhoto/profilePhoto.jpg';
+import logoImage from '../components/Navbar/portfolioLogo.png';
+import linkedinImage from '../components/Navbar/linkedin.png';
+import githubImage from '../components/Navbar/github.png';
 
 export const peterMujuni = {
     personligInfo: {
@@ -35,7 +35,7 @@ export const peterMujuni = {
         },
         {
             company: 'Alif Ba Ta Sprogcenter',
-            period: 'Jan 2018 - Dec 2020',
+            period: 'Jan 2016 - Dec 2020',
             assignments: 'udvikling og vedligholdelse af firmaets hjemmside.'
         },
         {
