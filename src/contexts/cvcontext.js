@@ -11,6 +11,5 @@ export const CVContextProvider = (props) => {
             {props.children}
         </CVContext.Provider>
     );
-    
 }
 

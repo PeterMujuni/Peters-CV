@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import { HorizontalRule } from "../horizRule/HoriRule";
+import { HorizontalRule } from "../../../components/horizRule/HoriRule";
 import './Experience.css';
 import { GoCalendar } from 'react-icons/go';
 import {ImOffice} from 'react-icons/im';
-import { CVContext } from "../../contexts/cvcontext";
+import { CVContext } from "../../../contexts/cvcontext";
 
 export const Experience = () => {
     const { cv } = useContext(CVContext);

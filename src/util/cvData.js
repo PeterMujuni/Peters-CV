@@ -1,7 +1,7 @@
-import profileimage from '../components/ProfilePhoto/profilePhoto.jpg';
-import logoImage from '../components/Navbar/portfolioLogo.png';
-import linkedinImage from '../components/Navbar/linkedin.png';
-import githubImage from '../components/Navbar/github.png';
+import profileimage from '../assets/profilePhoto.jpg';
+import logoImage from '../assets/portfolioLogo.png';
+import linkedinImage from '../assets/linkedin.png';
+import githubImage from '../assets/github.png';
 
 export const peterMujuni = {
     personligInfo: {

@@ -4,7 +4,7 @@ import {MdWork} from 'react-icons/md';
 import {MdAttachEmail} from 'react-icons/md';
 import {GiPositionMarker} from 'react-icons/gi';
 import {IoIosContact} from 'react-icons/io';
-import { CVContext } from "../../contexts/cvcontext";
+import { CVContext } from "../../../contexts/cvcontext";
 
 
 export const PersonalInfo = () => {

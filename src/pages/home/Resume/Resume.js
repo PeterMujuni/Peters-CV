@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { CVContext } from "../../contexts/cvcontext";
+import { CVContext } from "../../../contexts/cvcontext";
 
 export const Resume = () => {
     const {cv} = useContext(CVContext);

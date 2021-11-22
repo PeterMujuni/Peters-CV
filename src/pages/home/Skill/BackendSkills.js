@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import { HorizontalRule } from '../horizRule/HoriRule';
+import { HorizontalRule } from '../../../components/horizRule/HoriRule';
 import './Skill.css';
-import { peterMujuni } from '../../util/cvData';
-import { Icons } from '../iconComp/iconComp';
-import { CVContext } from '../../contexts/cvcontext';
+import { peterMujuni } from "../../../util/cvData";
+import { Icons } from '../../../components/iconComp/iconComp';
+import { CVContext } from "../../../contexts/cvcontext";
 
 export const BackendSkills = () => {
     const { cv } = useContext(CVContext);

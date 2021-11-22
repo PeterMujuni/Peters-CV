@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import { GrFormNextLink } from 'react-icons/gr';
-import { HorizontalRule } from "../horizRule/HoriRule";
+import { HorizontalRule } from "../../../components/horizRule/HoriRule";
 import './Project.css';
 import { GoCalendar } from 'react-icons/go';
 import {FiActivity} from 'react-icons/fi';
-import { peterMujuni } from "../../util/cvData";
-import { CVContext } from "../../contexts/cvcontext";
+import { peterMujuni } from "../../../util/cvData";
+import { CVContext } from "../../../contexts/cvcontext";
 
 export const Project = () => {
     const { cv } = useContext(CVContext);

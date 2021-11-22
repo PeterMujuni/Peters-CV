@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import './Language.css';
 import {GiTalk} from 'react-icons/gi';
-import { CVContext } from "../../contexts/cvcontext";
+import { CVContext } from "../../../contexts/cvcontext";
 
 export const Language = () => {
     const { cv } = useContext(CVContext);

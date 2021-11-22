@@ -1,5 +1,4 @@
 import Particles from 'react-tsparticles';
-import portfolioLogo from '../Navbar/portfolioLogo.png'
 
 export const ParticleBackground = () => {
     const particlesInit = (main) => {
@@ -31,7 +30,7 @@ export const ParticleBackground = () => {
                 },
                 onHover: {
                     enable: true,
-                    mode: "attract",
+                    mode: "grab",
                 },
                 resize: true,
                 },
@@ -40,58 +39,74 @@ export const ParticleBackground = () => {
                     distance: 400,
                     duration: 2,
                     opacity: 0.8,
-                    size: 40,
+                    size: 10,
                 },
                 push: {
                     quantity: 4,
                 },
                 repulse: {
-                    distance: 200,
-                    duration: 0.4,
+                    distance: 100,
+                    duration: 1.2,
+                },
+                connect: {
+                    distance: 100,
+                    radius: 60,
+                    lineLinked: {
+                        opacity: 1,
+                    },
+                },
+                remove: {
+                    quantity: 4,
+                },
+                grab: {
+                    distance: 100,
+                    lineLinked: {
+                        opacity: 1,
+                    },
                 },
                 },
             },
             particles: {
                 color: {
-                value: "#ffffff",
+                    value: "#ffffff",
                 },
                 links: {
-                color: "#ffffff",
-                distance: 200,
-                enable: true,
-                opacity: 0.5,
-                width: 1,
+                    color: "#ffffff",
+                    distance: 200,
+                    enable: false,
+                    opacity: 0.5,
+                    width: 1,
                 },
                 collisions: {
-                enable: true,
+                    enable: true,
                 },
                 move: {
-                direction: "none",
-                enable: true,
-                outMode: "bounce",
-                random: false,
-                speed: 1,
-                straight: false,
+                    direction: "none",
+                    enable: true,
+                    outMode: "bounce",
+                    random: false,
+                    speed: 0.1,
+                    straight: false,
                 },
                 number: {
-                density: {
-                    enable: true,
-                    value_area: 800,
+                    density: {
+                        enable: true,
+                        value_area: 800,
                 },
                 value: 80,
                 },
                 opacity: {
-                value: 0.5,
+                    value: 0.5,
                 },
                 shape: {
-                type: "circle",
+                    type: "star",
                 },
                 size: {
-                random: true,
-                value: 5,
+                    random: true,
+                    value: 5,
                 },
             },
-            detectRetina: true,
+            detectRetina: false,
             }}
         />       
     )  

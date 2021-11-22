@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { HorizontalRule } from "../horizRule/HoriRule";
+import { HorizontalRule } from "../../../components/horizRule/HoriRule";
 import { GoCalendar } from 'react-icons/go';
 import {MdSchool} from 'react-icons/md';
-import { CVContext } from "../../contexts/cvcontext";
+import { CVContext } from "../../../contexts/cvcontext";
 
 export const Education = () => {
     const { cv } = useContext(CVContext);
