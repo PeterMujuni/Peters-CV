@@ -26,7 +26,7 @@ export const ParticleBackground = () => {
                 events: {
                 onClick: {
                     enable: true,
-                    mode: "push",
+                    mode: "bubble",
                 },
                 onHover: {
                     enable: true,
@@ -36,10 +36,10 @@ export const ParticleBackground = () => {
                 },
                 modes: {
                 bubble: {
-                    distance: 400,
+                    distance: 200,
                     duration: 2,
                     opacity: 0.8,
-                    size: 10,
+                    size: 8,
                 },
                 push: {
                     quantity: 4,

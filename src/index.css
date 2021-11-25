@@ -10,9 +10,13 @@ h1, h2, h3, h4 {
   color: #255f7f;
 }
 
+h3, h4 {
+  color: #424344;
+}
+
 p {
   margin-bottom: .75em;
-  color: #484644;
+  color: #424344;
 }
 
 body {

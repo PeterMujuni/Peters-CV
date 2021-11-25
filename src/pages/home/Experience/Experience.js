@@ -14,7 +14,7 @@ export const Experience = () => {
         <article className="experiences">
             <div className="header">
                 <ImOffice style={style1}/>
-                <h2>ERFARING</h2>
+                <h2>EXPERIENCE</h2>
             </div>
 
             {cv.experience.map((item, index) => {
@@ -29,7 +29,10 @@ export const Experience = () => {
                             <h4 className="dato">{item.period}</h4>
                         </div>
                         <div className="paraText">
-                            <p>{item.assignments}</p>
+                            <p><b>Project:</b> {item.assignments}</p>
+                            <p><b>Responsibilities:</b></p>
+                            <ul>{item.responsibilities.map((resp) => <li>{resp}</li>)}</ul>
+                            <p><b>Technologies:</b> {item.technologies.map((tech) => (<span>{tech+", "}</span>))}</p>
                         </div>
                         <HorizontalRule/>
                     </div>

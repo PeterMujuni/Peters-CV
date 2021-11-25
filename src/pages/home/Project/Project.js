@@ -15,7 +15,7 @@ export const Project = () => {
         <article className="projects box">
             <div className="header">
                 <FiActivity  style={style1}/>
-                <h2>PROJEKTER</h2>
+                <h2>PROJECTS</h2>
             </div>
             {cv.projects.map((item, index) => {
                     return (
@@ -30,7 +30,7 @@ export const Project = () => {
                             <div className="paraText">
                                 <p>{item.description}</p>
                             </div>
-                            <a href={item.link}><GrFormNextLink/>Se project</a>
+                            <a href={item.link}><GrFormNextLink/>See project</a>
                             <HorizontalRule/>                 
                         </div>
                     );

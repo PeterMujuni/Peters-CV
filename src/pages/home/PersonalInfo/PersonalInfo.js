@@ -16,7 +16,7 @@ export const PersonalInfo = () => {
         <article className="personal-info box">
             <div className="header">
                 <IoIosContact style={style}/>
-                <h2>PERSONLIG INFO</h2>
+                <h2>PERSONAL INFO</h2>
             </div>
             <div className="job-titel">
                 <MdWork style={style1}/>

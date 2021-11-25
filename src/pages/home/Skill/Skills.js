@@ -13,7 +13,7 @@ export class Skills extends React.Component {
             <article className="box">
                 <div className="header">
                     <FaAward style={style1}/>
-                    <h2>FÆRDIGHEDER</h2>
+                    <h2>Skills</h2>
                 </div>
                 <div className="skills">
                     <FrontendSkills />

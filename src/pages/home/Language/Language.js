@@ -10,7 +10,7 @@ export const Language = () => {
         <article className="box">
             <div className="header">
                 <GiTalk style={style1}/>
-                <h2>SPROG</h2>
+                <h2>LANGUAGE</h2>
             </div>
             <div className="languages">
                 {cv.language.map((item, index) => {

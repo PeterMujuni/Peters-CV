@@ -13,7 +13,7 @@ export const Education = () => {
         <article className="educations box">
             <div className="header">
                 <MdSchool style={style1}/>
-                <h2>UDDANNELSE</h2>
+                <h2>EDUCATION</h2>
             </div>
             {cv.education.map((item,index) => {
                 return (

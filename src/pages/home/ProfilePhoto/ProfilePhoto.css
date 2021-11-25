@@ -1,6 +1,7 @@
 section.left figure {
     width: 100%;
     margin-bottom: 20px;
+    transition: all 0.2s ease-in-out;
   }
 
 section.left figure.profile-photo {
@@ -27,3 +28,8 @@ section.left figure img {
 .profile-text p {
     color: #fff;
 }
+
+section.left figure:hover {
+    transform: scale(0.9);
+    transition: all 0.2s ease-in-out;
+  }

@@ -2,6 +2,7 @@
 .email-info h3,
 .location-info h3 {
     margin: 0;
+    font-weight: 500;
 }
 
 .job-titel,
@@ -10,7 +11,12 @@
     margin: 15px;
 }
 
-a {
+.email-info a {
+    text-decoration: none;
+    color: #424344;
+}
+
+.email-info a:hover {
     text-decoration: none;
     color: #255f7f;
 }

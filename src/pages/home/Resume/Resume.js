@@ -1,6 +1,9 @@
 import React, { useContext } from "react";
 import { CVContext } from "../../../contexts/cvcontext";
 
+// styles
+import './Resume.css'
+
 export const Resume = () => {
     const {cv} = useContext(CVContext);
     return (
@@ -9,7 +12,7 @@ export const Resume = () => {
                 <h2>RESUMÈ</h2>
             </div>
             <div className="paraText">
-                <p>{cv.resume}</p>
+                {cv.resume.map((line) => (<p>{line}</p>))}
             </div>
         </article>
     );

@@ -16,53 +16,110 @@ export const peterMujuni = {
         githubLink: 'https://github.com/PeterMujuni',
         linkedinLink: 'https://www.linkedin.com/in/petermujuni/'
     },
-    resume: 'Jeg er en nysgerrige, proaktiv web udvikler. Jeg kan godt lide at skabe moderne, smukke og responsive front-end-websteder. Mit foretrukne front-end bibliotek er React, men har ligeledes evne til at lære nye færdigheder på kort tid.',
+    resume: [
+        "Frontend Engineer, Peter Mujuni contributes to the improvement of web applications through accessibility, newest trends, best practices and strong focus on high quality code. He has reached his results through planning, documenting, implementing and executing frontend projects.",
+        "The developer has hands-on experience as Frontend Engineer, with a strong focus on adding value by building bridges between the frontend  and users.",
+        "He has experience in building frontend applications with fundamental web technologies from scratch such as  JavaScript ES6, CSS3 and HTML5, and also utilizing JS Libraries such as ReactJS.",
+        "He is a web addict and has been working professionally within the WEB-industry since 2015."
+    ],
     experience: [
         {
             company: 'Meedo',
             period: 'Nov 2021 - Now',
-            assignments: 'Udvikling af applikationer med ReactJS.'
-        },
-        {
-            company: 'meneto Software ApS',
-            period: 'April 2019 - Jun 2019',
-            assignments: 'Arbejdede som freelancere til at udvikle hele menetos website Og omsætte en e-book artikel på 42 sider til HTML CSS.'
+            assignments: 'Redevelop a wordpress learning management system into a React based application.',
+            responsibilities: [
+                'Implementation of web solutions using ReactJS.',
+                'Further development of existing projects.',
+                'Utilizing of APIs in web applications',
+                'Close collaboration with designers, UXs and backenders.',
+                'Conducting stakeholder calls to gather feedback.',
+                'Ensure a high quality of code.',
+                'Ensure that site works on a wide range of devices, screen sizes and browsers.'
+            ],
+            technologies: [
+                'ReactJS', 'JavaScript ES6', 'CSS3', 'HTML5', 'Git', 'GitHub', 'Bash', 'VSCode', 'Babel'
+            ]
         },
         {
             company: 'Flyttecentrum',
-            period: 'Juli 2019 - Aug 2019',
-            assignments: 'Design af en ny ordre side til flyttecentrum med photoshop. Omsætning af designet til functionel kode, ved brug af HTML5, CSS3 & Vanilla JavaScript.'
+            period: 'July 2019 - Aug 2019',
+            assignments: 'Design and implement an order form.',
+            responsibilities: [
+                'Design UI using Photoshop.',
+                'Development of a responsive UI component.',
+                'Ensure browser compatibility.',
+                'Conducting stakeholder meetings to gather feedback.',
+                'Analyzing requirements, as well as estimation of solution proposals.'
+            ],
+            technologies: [
+                'JavaScript ES6', 'CSS3', 'HTML5', 'Git', 'GitHub', 'Bash', 'VSCode', 'Babel'
+
+            ]
+        },
+        {
+            company: 'meneto Software ApS',
+            period: 'April 2019 - June 2019',
+            assignments: 'Redevelop existing web app. Add an employee page. Turn a 42 page  e-book into HTML and CSS.',
+            responsibilities: [
+                'Redevelopment of the company website.',
+                'Design and develop new functions for existing modules.',
+                'Ensure a high quality of code.',
+                'Optimize and leverage new solutions and technology.',
+                'Close collaboration with designers and UXs.',
+                'Further development of new features.',
+                'Conducting stakeholder meetings to gather feedback',
+                'Ensure responsiveness to a wide range of devices.',
+                'Ensure browser compatibility.'
+            ],
+            technologies: [
+                'JavaScript ES6', 'CSS3', 'HTML5', 'Git', 'GitHub', 'Bash', 'VSCode', 'babel'
+            ]
         },
         {
             company: 'Alif Ba Ta Sprogcenter',
-            period: 'Jan 2016 - Dec 2020',
-            assignments: 'udvikling og vedligholdelse af firmaets hjemmside.'
+            period: 'Jan 2017 - Dec 2020',
+            assignments: 'Develop company web app. Maintain, update and add new features.',
+            responsibilities: [
+                'Design UI using Photoshop.',
+                'Develop UI with HTML5, CSS3 and React.',
+                'Deliver a responsive company website to all devices.',
+                'Utilizing APIs in web applications.',
+                'Translate business needs into technical requirements.',
+                'Conducting stakeholder meetings to gather feedback',
+                'Ongoing further development of new features.'
+
+            ],
+            technologies: [
+                'ReactJS', 'JavaScript ES6', 'CSS3', 'HTML5', 'Git', 'GitHub', 'Bash', 'VSCode', 'Babel'
+            ]
         },
         {
             company: 'Softmedia Group',
-            period: 'Maj 2015 - Dec 2015',
-            assignments: 'Mine opgaver bestod i udvikling af hjemmesider, ved brug af HTML og CSS. Siderne blev dernæst overført til Wordpress.'
+            period: 'May 2015 - Dec 2016',
+            assignments: 'Implement UI designs. Develop and maintain company web app.',
+            responsibilities: [
+                'Develop websites using HTML, CSS, and JavaScript.',
+                'Further development of existing projects.',
+                'Collaboration with designers.',
+                'Create responsive sites.',
+                'Participate in workshops with customers.'
+            ],
+            technologies: [
+                'JavaScript ES6', 'CSS3', 'HTML5', 'Git', 'GitHub', 'Bash', 'VSCode', 'Babel'
+            ]
         }
     ],
     education: [
         {
-            name: 'React Developer CODECADEMY',
-            period: 'Aug 2021 - Dec 2021'
-        },
-        {
-            name: 'Frontend Nanodegree hos UDACITY',
-            period: 'Dec 2018 - Marts 2019'
-        },
-        {
-            name: 'Datamatiker Computer Science',
+            name: 'AP Graduate in Computer Science',
             period: 'Aug 2012 - Dec 2014'
         }
     ],
     projects: [
         {
-            name: 'Book List app',
-            period: 'Nov 2021',
-            description: 'An app that helps me keep track of the books i want to read. I can add books to the list, delete book from the list. App made in ReactJS',
+            name: 'Coming soon',
+            period: '',
+            description: '',
             link: '#'
         }
     ],
@@ -83,7 +140,7 @@ export const peterMujuni = {
             progressValue: '99'
         },
         {
-            name: 'JavaScript',
+            name: 'JavaScript ES6',
             icon: 'SiJavascript',
             progressValue: '99'
         },
@@ -93,14 +150,19 @@ export const peterMujuni = {
             progressValue: '99'
         },
         {
+            name: 'Redux',
+            icon: 'SiRedux',
+            progressValue: '99'
+        },
+        {
             name: 'TypeScript',
             icon: 'SiTypescript',
-            progressValue: '50'
+            progressValue: '85'
         },
         {
             name: 'Sass',
             icon: 'SiSass',
-            progressValue: '50'
+            progressValue: '90'
         },
         {
             name: 'Babel',
@@ -109,6 +171,16 @@ export const peterMujuni = {
         }
     ],
     backendskills: [
+        {
+            name: 'MongoDB',
+            icon: 'SiMongodb',
+            progressValue: '99'
+        },
+        {
+            name: 'Firebase',
+            icon: 'SiFirebase',
+            progressValue: '99'
+        },
         {
             name: 'NodeJS',
             icon: 'SiNodedotjs',
@@ -119,17 +191,22 @@ export const peterMujuni = {
         {
             name: 'Git',
             icon: 'SiGit',
-            progressValue: '95'
+            progressValue: '99'
         },
         {
             name: 'GitHub',
             icon: 'SiGithub',
-            progressValue: '55'
+            progressValue: '95'
         },
         {
             name: 'Bash',
             icon: 'SiGnubash',
-            progressValue: '80'
+            progressValue: '99'
+        },
+        {
+            name: 'npm',
+            icon: 'SiNpm',
+            progressValue: '75'
         },
         {
             name: 'Photoshop',
