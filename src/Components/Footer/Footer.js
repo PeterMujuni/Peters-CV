@@ -1,30 +1,31 @@
-import React from "react";
+import React, { useContext } from "react";
 import './Footer.css';
-import { MdAlternateEmail } from 'react-icons/md';
-import { SiGithub } from 'react-icons/si';
-import { SiLinkedin } from 'react-icons/si';
+import { SiGithub, SiTwitter, SiLinkedin } from 'react-icons/si';
+import { CVContext } from "../../contexts/cvcontext";
 
-export class Footer extends React.Component {
-    render() {
-        return (
-            <footer>
-                <div class="footer-info">
-                    <div class="socia-info">
-                        <div class="email">
-                            <span><MdAlternateEmail/></span>
-                            <a href="mailto:kontakt@petermujuni.dk" class="val">kontakt@petermujuni.dk</a>
-                        </div>
-                        <div class="github">
-                            <span><SiGithub/></span>
-                            <a href="https://github.com/PeterMujuni"  class="val">PeterMujuni</a>
-                        </div>
-                        <div class="linkedin">
-                            <span><SiLinkedin/></span>
-                            <a href="https://www.linkedin.com/in/petermujuni/"  class="val">peterMujuni</a>
-                        </div>
-                    </div>        
-                </div>               
-            </footer> 
-        );
-    }
+export const Footer = () => {    
+    const { cv } = useContext(CVContext);
+    
+    return (
+        <footer className="footer">
+            <a href={`mailto:${cv.personligInfo.email}`} className="footer__link">kontakt@petermujuni.dk</a>
+            <ul className="social-list">
+                <li className="social-list__item">
+                    <a href={cv.personligInfo.githubLink} className="social-list__link">
+                        <SiGithub />
+                    </a></li>
+                <li className="social-list__item">
+                    <a href={cv.personligInfo.linkedinLink} className="social-list__link">
+                        <SiLinkedin />
+                    </a>
+                </li>
+                <li className="social-list__item">
+                    <a href="#" className="social-list__link">
+                        <SiTwitter />
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    );
+    
 }

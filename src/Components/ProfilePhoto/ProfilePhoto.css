@@ -1,0 +1,36 @@
+figure {
+    width: 100%;
+    margin-bottom: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+
+figure.profile-photo {
+    position: relative;
+}
+
+figure img {
+    width: 100%;
+    display: block;
+    border-radius: 9px;
+}
+
+.profile-text h1 {
+    color: #ff2710;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+
+.profile-text {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.profile-text p {
+    color: #fff;
+}
+
+figure:hover {
+    transform: scale(0.9);
+    transition: all 0.2s ease-in-out;
+  }

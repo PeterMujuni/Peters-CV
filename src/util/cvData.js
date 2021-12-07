@@ -2,6 +2,7 @@ import profileimage from '../assets/profilePhoto.jpg';
 import logoImage from '../assets/portfolioLogo.png';
 import linkedinImage from '../assets/linkedin.png';
 import githubImage from '../assets/github.png';
+import comingSoonImage from '../assets/coming-soon.png'
 
 export const peterMujuni = {
     personligInfo: {
@@ -37,7 +38,7 @@ export const peterMujuni = {
                 'Ensure that site works on a wide range of devices, screen sizes and browsers.'
             ],
             technologies: [
-                'ReactJS', 'JavaScript ES6', 'CSS3', 'HTML5', 'Git', 'GitHub', 'Bash', 'VSCode', 'Babel'
+                'ReactJS', 'JavaScript ES6', 'CSS3', 'HTML5', 'Git', 'GitHub', 'Bash', 'VSCode'
             ]
         },
         {
@@ -52,7 +53,7 @@ export const peterMujuni = {
                 'Analyzing requirements, as well as estimation of solution proposals.'
             ],
             technologies: [
-                'JavaScript ES6', 'CSS3', 'HTML5', 'Git', 'GitHub', 'Bash', 'VSCode', 'Babel'
+                'JavaScript', 'CSS3', 'HTML5', 'Git', 'GitHub', 'Bash', 'VSCode'
 
             ]
         },
@@ -72,7 +73,7 @@ export const peterMujuni = {
                 'Ensure browser compatibility.'
             ],
             technologies: [
-                'JavaScript ES6', 'CSS3', 'HTML5', 'Git', 'GitHub', 'Bash', 'VSCode', 'babel'
+                'JavaScript ES6', 'CSS3', 'HTML5', 'Git', 'GitHub', 'Bash', 'VSCode'
             ]
         },
         {
@@ -90,7 +91,7 @@ export const peterMujuni = {
 
             ],
             technologies: [
-                'ReactJS', 'JavaScript ES6', 'CSS3', 'HTML5', 'Git', 'GitHub', 'Bash', 'VSCode', 'Babel'
+                'ReactJS', 'JavaScript ES6', 'CSS3', 'HTML5', 'Git', 'GitHub', 'Bash', 'VSCode'
             ]
         },
         {
@@ -105,7 +106,7 @@ export const peterMujuni = {
                 'Participate in workshops with customers.'
             ],
             technologies: [
-                'JavaScript ES6', 'CSS3', 'HTML5', 'Git', 'GitHub', 'Bash', 'VSCode', 'Babel'
+                'JavaScript ES6', 'CSS3', 'HTML5', 'Git', 'GitHub', 'Bash', 'VSCode'
             ]
         }
     ],
@@ -120,6 +121,14 @@ export const peterMujuni = {
             name: 'Coming soon',
             period: '',
             description: '',
+            imageUrl: comingSoonImage,
+            link: '#'
+        },
+        {
+            name: 'Coming soon',
+            period: '',
+            description: '',
+            imageUrl: comingSoonImage,
             link: '#'
         }
     ],
@@ -132,101 +141,120 @@ export const peterMujuni = {
         {
             name: 'HTML5',
             icon: 'SiHtml5',
-            progressValue: '99'
+            progressValue: '99',
+            color: '#F76800'
         },
         {
             name: 'CSS3',
             icon: 'SiCss3',
-            progressValue: '99'
+            progressValue: '99',
+            color: '#32A2D6'
         },
         {
             name: 'JavaScript ES6',
             icon: 'SiJavascript',
-            progressValue: '99'
-        },
-        {
-            name: 'ReactJS',
-            icon: 'SiReact',
-            progressValue: '99'
-        },
-        {
-            name: 'Redux',
-            icon: 'SiRedux',
-            progressValue: '99'
-        },
-        {
-            name: 'TypeScript',
-            icon: 'SiTypescript',
-            progressValue: '85'
+            progressValue: '99',
+            color: '#F7DF1E'
         },
         {
             name: 'Sass',
             icon: 'SiSass',
-            progressValue: '90'
+            progressValue: '90',
+            color: '#C76395'
         },
         {
-            name: 'Babel',
-            icon: 'SiBabel',
-            progressValue: '99'
+            name: 'ReactJS',
+            icon: 'SiReact',
+            progressValue: '99',
+            color: '#5ED3F3'
+        },
+        {
+            name: 'TypeScript',
+            icon: 'SiTypescript',
+            progressValue: '50',
+            color: '#2F74C0'
+        },
+        {
+            name: 'NextJS',
+            icon: 'SiNextdotjs',
+            progressValue: '75',
+            color: '#1D262D'
+        },
+        {
+            name: 'Redux',
+            icon: 'SiRedux',
+            progressValue: '60',
+            color: '#7248B6'
         }
     ],
     backendskills: [
         {
             name: 'MongoDB',
             icon: 'SiMongodb',
-            progressValue: '99'
+            progressValue: '99',
+            color: '#4CAA3D'
         },
         {
             name: 'Firebase',
             icon: 'SiFirebase',
-            progressValue: '99'
+            progressValue: '99',
+            color: '#F4C43D'
         },
         {
             name: 'NodeJS',
             icon: 'SiNodedotjs',
-            progressValue: '75'
+            progressValue: '75',
+            color: '#4D9E39'
         }
     ],
     otherskills: [
         {
             name: 'Git',
             icon: 'SiGit',
-            progressValue: '99'
+            progressValue: '99',
+            color: '#EB4D1C'
         },
         {
             name: 'GitHub',
             icon: 'SiGithub',
-            progressValue: '95'
+            progressValue: '95',
+            color: '#1A1E22'
         },
         {
             name: 'Bash',
             icon: 'SiGnubash',
-            progressValue: '99'
+            progressValue: '99',
+            color: '#3C4548'
         },
         {
             name: 'npm',
             icon: 'SiNpm',
-            progressValue: '75'
+            progressValue: '75',
+            color: '#C60000'
         },
         {
             name: 'Photoshop',
             icon: 'SiAdobephotoshop',
-            progressValue: '75'
+            progressValue: '75',
+            color: '#03272F'
         },
         {
             name: 'Illustrator',
             icon: 'SiAdobeillustrator',
-            progressValue: '55'
+            progressValue: '55',
+            color: '#310000'
         },
         {
             name: 'Indesign',
             icon: 'SiAdobeindesign',
-            progressValue: '80'
+            progressValue: '80',
+            color: '#47021E'
         },
         {
             name: 'Audition',
             icon: 'SiAdobeaudition',
-            progressValue: '80'
+            progressValue: '80',
+            color: '#00251F'
         }
     ],
     language: [
