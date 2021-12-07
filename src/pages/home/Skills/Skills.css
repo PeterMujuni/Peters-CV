@@ -1,7 +1,7 @@
 /* My Skills section */
 
 .my-skills {
-    background: var(--clr-dark);
+    background: #4c4747;
     background-image: url(../../../assets/services-bg.png);
     background-size: cover;
     background-blend-mode: multiply;
@@ -49,6 +49,10 @@
     margin-bottom: 1em;
     gap: 10px;
     justify-content: space-between;
+}
+
+.icon-section {
+    display: flex;
 }
 
 progress {

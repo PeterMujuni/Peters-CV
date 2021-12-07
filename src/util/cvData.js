@@ -151,7 +151,7 @@ export const peterMujuni = {
             color: '#32A2D6'
         },
         {
-            name: 'JavaScript ES6',
+            name: 'JavaScript',
             icon: 'SiJavascript',
             progressValue: '99',
             color: '#F7DF1E'

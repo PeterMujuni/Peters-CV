@@ -10,7 +10,7 @@ export const FrontendSkills = () => {
                 console.log(item.color);
                 return (                    
                     <div key={index} className="skill">
-                        <span><Icons iconName={item.icon} style={item.color}/> {item.name}</span>
+                        <span className="icon-section"><Icons iconName={item.icon} style={item.color}/> {item.name}</span>
                         <progress max="100" value={item.progressValue}>95%</progress>
                     </div>
                      
