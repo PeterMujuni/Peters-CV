@@ -2,7 +2,7 @@ import { useContext } from "react"
 import { CVContext } from "../contexts/cvcontext"
 
 // styles
-import './project.css'
+import './Project.css'
 
 export const Project = () => {
     const { cv } = useContext(CVContext);

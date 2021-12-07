@@ -1,4 +1,4 @@
-import './about.css'
+import './About.css'
 import aboutPhoto from '../../../assets/petermujuni1.png'
 import { CVContext } from '../../../contexts/cvcontext'
 import { useContext } from 'react'
